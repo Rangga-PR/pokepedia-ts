@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Container, Bar } from "./style";
 
 interface ProgressBarProps {
@@ -13,11 +12,6 @@ const ProgressBar = ({ progress, color, ...props }: ProgressBarProps) => {
       <Bar progress={progress} color={color} />
     </Container>
   );
-};
-
-ProgressBar.propTypes = {
-  progress: PropTypes.number,
-  color: PropTypes.string,
 };
 
 export default ProgressBar;
