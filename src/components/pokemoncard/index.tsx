@@ -5,12 +5,7 @@ import Typo from "../common/typo";
 import Flexbox from "../common/flexbox";
 import { useTheme } from "@emotion/react";
 import Link from "next/link";
-
-interface PokemonData {
-  id: number;
-  name: string;
-  artwork: string;
-}
+import { PokemonData } from "../../interface";
 
 interface PokemonCardProps {
   data: PokemonData;
