@@ -3,9 +3,13 @@ import { CardContainer } from "./style";
 import Flexbox from "../common/flexbox";
 import Skeleton from "../common/skeleton";
 
-const MoveCardSkeleton = () => {
+interface MoveCardSkeletonProps {
+  m?: string;
+}
+
+const MoveCardSkeleton = ({ m }: MoveCardSkeletonProps) => {
   return (
-    <CardContainer>
+    <CardContainer m={m}>
       <Skeleton w="28px" h="28px" br="100%" m="0 16px 0 0" />
       <Flexbox dir="column" m="0 16px 0 0" fg="1">
         <Skeleton w="100%" h="14px" m="4px 0" br="8px" />
