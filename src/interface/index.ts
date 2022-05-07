@@ -16,3 +16,9 @@ export interface Stat {
   name: string;
   stat: number;
 }
+
+export interface IMove {
+  name: string;
+  level: number;
+  method: string;
+}
