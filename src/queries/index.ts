@@ -10,3 +10,38 @@ export const GET_POKEMONS = `
     }
   }
 `;
+
+export const GET_POKEMON = `
+  query pokemon($name: String!) {
+    pokemon(name: $name) {
+      id
+      name
+      sprites {
+        front_default
+      }
+      stats {
+        base_stat
+        stat {
+          id
+          name
+        }
+      }
+      moves {
+        move {
+          name
+        }
+        version_group_details {
+          level_learned_at
+          move_learn_method {
+            name
+          }
+        }
+      }
+      types {
+        type {
+          name
+        }
+      }
+    }
+  }
+`;
