@@ -22,3 +22,9 @@ export interface IMove {
   level: number;
   method: string;
 }
+
+export interface ICatchedPokemon {
+  id: number;
+  name: string;
+  sprites: string;
+}

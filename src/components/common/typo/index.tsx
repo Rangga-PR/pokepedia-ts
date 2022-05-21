@@ -10,6 +10,7 @@ type TypoProps = {
   ta?: string;
   m?: string;
   p?: string;
+  htmlFor?: string;
 };
 
 export default styled.p<TypoProps>`
