@@ -13,7 +13,7 @@ interface PokemonListProps {
 const Pokemonlist = ({ data, localData, loading }: PokemonListProps) => {
   return (
     <Flexbox dir="column" p="16px">
-      {data.map((d) => (
+      {data?.map((d) => (
         <PokemonCard
           key={d.id}
           data={d}
