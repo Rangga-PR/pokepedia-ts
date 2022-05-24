@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import Head from "next/head";
 import Layout from "../src/layout";
-import Appbar from "../src/components/apppbar";
+import Appbar from "../src/components/appbar";
 import { GET_MY_POKEMON, myPokemonStore } from "../src/context/mypokemon";
 import MyPokemonList from "../src/components/mypokemonlist";
 
